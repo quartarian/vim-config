@@ -19,3 +19,11 @@ python - pyflakes
 pip install pyflakes  
 there is some work done on getting syntastic to play nice in virtualenv, but not quite there yet  
 
+
+Favorite Colors
+----------------------
+# blazer
+# bubblegum-256-dark
+
+
+

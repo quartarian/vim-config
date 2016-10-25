@@ -27,7 +27,10 @@ set shiftwidth=2
 set autoindent " auto indentation
 set smartindent
 
+" Code Folding
 set fdm=syntax
+nnoremap <Space> za
+vnoremap <Space> za
 
 set hlsearch "highlight search terms
 set incsearch " highlight and search to while typing
@@ -58,12 +61,12 @@ let NERDTreeIgnore = ['\.pyc$']
 
 
 " Use the arrows to switch buffers
-map <right> :bn<cr>
-map <left> :bp<cr>
+ "map <right> :bn<cr>
+ "map <left> :bp<cr>
 
 " alt left right for buffer switching
-nnoremap <A-Left> :tabprevious<CR>
-nnoremap <A-Right> :tabnext<CR>
+nnoremap <C-Left> :tabprevious<CR>
+nnoremap <C-Right> :tabnext<CR>
 filetype plugin on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -119,14 +122,33 @@ iabbrev adn and
 iabbrev tehn then
 iabbrev waht what
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => macvim colors
+" => Airline
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'ubaryd'
+" let g:airline_powerline_fonts = 1
+"
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Color!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
-:colorscheme koehler
+:colorscheme blazer
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => json formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>j :%!python -m json.tool<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Enable Mouse
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set mouse=a
 

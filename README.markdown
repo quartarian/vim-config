@@ -22,8 +22,14 @@ there is some work done on getting syntastic to play nice in virtualenv, but not
 
 Favorite Colors
 ----------------------
+
 # blazer
 # bubblegum-256-dark
+
+Attribution
+----------------------
+
+Originally forked from cormac/vim-config 
 
 
 
